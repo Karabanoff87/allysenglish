@@ -8,7 +8,7 @@
     <title>Ally's English Club</title>
 </head>
 <body>
-    <!-- header -->
+    <!-- Header -->
     <header class="header">
         <div class="header__left">
             <h1 class="header__title">Ally's English Club</h1>
@@ -18,15 +18,19 @@
             <a href="#nav" class="btn">узнать больше</a>
         </div>
         <div class="header__right">
-            <img src="./img/photo.png" alt="" class="header__photo">
+            <img src="./img/ph-left.png" alt="" class="header__photo img">
         </div>
     </header>
-    <nav class="nav" id="nav">
-        <li><a class="nav__link" href="#!">Мои группы</a></li>
-        <li><a class="nav__link" href="#!">обо мне</a></li>
-        <li><a class="nav__link" href="#!">отзывы</a></li>
-    </nav>
     <main class="main">
+
+        <!-- Nav -->
+        <nav class="nav" id="nav">
+            <li><a class="nav__link" href="#!">Мои группы</a></li>
+            <li><a class="nav__link" href="#!">обо мне</a></li>
+            <li><a class="nav__link" href="#!">отзывы</a></li>
+        </nav>
+
+        <!-- Groups -->
         <section class="section">
             <div class="container">
                 <h2 class="section__title" id="groups">мои группы</h2>
@@ -75,14 +79,86 @@
                 </div> <!-- ./groups -->
             </div> <!-- container -->
         </section>
+
+        <!-- About -->
+        <section class="section section--blue">
+            <h2 class="section__title">Немного обо мне</h2>
+            <div class="container">
+                <div class="about">
+                    <div class="about__left">
+                        <img class="about__photo img" src="./img/phal.png" alt="Альфия Карабанова, преподаватель английского языка фото">
+                    </div>
+                    <div class="about__right">
+                        <h3 class="section__subtitle">Кто я</h3>
+                        <p class="about__text">
+                            Уже 26 лет моя жизнь связана с английским, из них 11 лет преподаю его
+                        </p>
+                        <p class="about__text">Я изучаю язык с самого детства, училась в школе с углубленным изучением английского. Язык был в расписании 5 дней в неделю и вели его невероятные учителя. Я благодарна каждой из них за любовь к изучению языков, которой они зарядили меня на всю жизнь!</p>
+                        <p class="about__text">Для продолжения обучения я выбрала педагогический институт, на третьем курсе поехала на стажировку в Индонезию, где преподавала английский в колледже. Также там готовила учеников к выступлению на выставке.</p>
+                        <p class="about__text"></p>
+                    </div>
+                </div> <!-- /.about -->
+
+
+                <div class="gallery">
+                    <div class="gallery__item">
+                        <a href="#!" class="gallery__link">
+                            <img class="gallery__picture" src="./img/gallery/pic1.jpg" alt="">
+                        </a>
+                    </div> <!-- /.gallery__item -->
+                    <div class="gallery__item">
+                        <a href="#!" class="gallery__link">
+                            <img class="gallery__picture" src="./img/gallery/pic2.jpg" alt="">
+                        </a>
+                    </div> <!-- /.gallery__item -->
+                    <div class="gallery__item">
+                        <a href="./img/gallery/pic3.jpg" class="gallery__link">
+                            <img class="gallery__picture" src="./img/gallery/pic3.jpg" alt="">
+                        </a>
+                    </div> <!-- /.gallery__item -->
+                    <div class="gallery__item">
+                        <a href="#!" class="gallery__link">
+                            <img class="gallery__picture" src="./img/gallery/pic4.jpg" alt="">
+                        </a>
+                    </div> <!-- /.gallery__item -->
+                    <div class="gallery__item">
+                        <a href="#!" class="gallery__link">
+                            <img class="gallery__picture" src="./img/gallery/pic5.jpg" alt="">
+                        </a>
+                    </div> <!-- /.gallery__item -->
+                    <div class="gallery__item">
+                        <a href="#!" class="gallery__link">
+                            <img class="gallery__picture" src="./img/gallery/pic6.jpg" alt="">
+                        </a>
+                    </div> <!-- /.gallery__item -->
+                </div> <!-- /.gallery -->
+            </div> <!-- /.container -->
+        </section>
+
         <section class="section">
-            <h2 class="section__title">Отзывы моих учеников</h2>
-            <div class="reviews">
-                <div class="swiper">
-
-                </div>
-            </div>
-
+            <div class="container">
+                <h2 class="section__title">Отзывы моих учеников</h2>
+                <div class="reviews">
+                    <div class="reviews__author">
+                        <img src="https://doodleipsum.com/500x500/avatar?i=0512365fbc5f44dc6d964e17e6900bb4" alt="" class="reviews__photo img">
+                        <div class="reviews__name">Gayorgy</div>
+                    </div>
+                    <div class="reviews__text">
+                        <p>
+                            Мне очень нравится заниматься с Альфией,
+                            т.к:
+                        </p>
+                        <ol class="reviews__text-list">
+                            <li>Есть результат, и это очевидно, а для меня это все-таки главное в занятиях.</li>
+                            <li>Мои интересы подностью учитываются, а это очень важно для достижения результата</li>
+                            <li>Преподаватель всегда подготовлен, и урок идет четко, что для меня очень важно, тк у меня не много свободного времени, и я люблю тратить его эффективно</li>
+                            <li>При возникновении внештатных ситуаций с Альфией всегда можно найти общий язык и договориться о том, как преодолеть их</li>
+                            <li>Английский - это прежде всего общение, общение с Альфией получается веселым и непренужденным, нет ощущения менторства и вообще какого-то напряжения</li>
+                        </ol>
+                        <p>Одним словом, я считаю что Альфия прекрасный преподаватель`и желаю Але победы. Она этого достойна :)</p>
+                    </div>
+                </div> <!-- /.reviews -->
+            </div> <!-- ./container -->
         </section>
     </main>
 

@@ -6,6 +6,7 @@
     --black: #171717;
     --purple: #9599E2;
     --light-blue: #8BC6EC;
+    --light-gray:  #aeb6bf;
 
     --text-color: var(--black);
     --header-text:var(--white);
@@ -18,7 +19,7 @@
 body {
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .btn {
@@ -56,6 +57,13 @@ body {
     margin: 0 auto;
 }
 
+/* Helpers */
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 
 
 
@@ -65,7 +73,7 @@ body {
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    padding: 180px 40px 40px;
+    padding: 180px 0 0 40px;
 
     background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 35%, #596140 100%);
@@ -74,14 +82,22 @@ body {
     text-align: center;
     color: var(--white);
 
+
 }
 
 .header__left {
     width: 50%;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.header__right {
+    width: 50%;
     position: relative;
+
+
 }
 
 
@@ -116,12 +132,10 @@ body {
 
 
 .header__photo {
-    display: block;
-    height: auto;
-
     position: absolute;
     bottom: 0;
     right: 0;
+    z-index: 2;
 }
 
 /* Nav */
@@ -155,6 +169,11 @@ body {
 /* section */
 .section {
     padding: 70px 0;
+}
+
+.section--blue {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(150,203,238,1) 25%, rgba(139,198,236,1) 75%, rgba(255,255,255,1) 100%);
 }
 
 .section__title {
@@ -224,6 +243,94 @@ body {
     margin-bottom: 30px;
 }
 
+
+
+/* About */
+.about {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    border-bottom: 1px solid var(--light-gray);
+}
+.about__left {
+    max-width: 50%;
+}
+.about__photo {
+    width: 100%;
+    height: auto;
+}
+.about__right {
+    width: 50%;
+}
+.section__subtitle {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--accent);
+}
+.about__text {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.about__text::first-letter{
+    margin-left: 25px;
+}
+
+/* Gallery*/
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.gallery__item {
+    width: 180px;
+    height: 140px;
+}
+
+.gallery__link {
+    display: block;
+    padding: 5px;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    border-radius: 3px;
+}
+
+.reviews {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+.reviews__author {
+    max-width: 300px;
+    text-align: center;
+}
+
+.reviews__name {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.reviews__text {
+    padding: 25px;
+    line-height: 1.8;
+    font-style: italic;
+
+    border: 1px solid var(--light-gray);
+    border-radius: 0 30px 30px 30px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, .5);
+
+}
+
+.reviews__text-list {
+    padding-left: 30px;
+
+}
 
 
 
