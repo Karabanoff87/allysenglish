@@ -16,10 +16,11 @@
 }
 
 /* General */
-body {
+html,body {
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 .btn {
@@ -150,6 +151,12 @@ img {
     justify-content: center;
     list-style: none;
 
+    background-color: rgba(255, 255, 255, .7);
+
+    position: sticky;
+    top: 0;
+    left: 0;
+
     border-bottom: 1px solid var(--accent);
 }
 
@@ -157,17 +164,22 @@ img {
     display: block;
     padding: 20px 25px;
 
+
+
     font-size: 25px;
     font-weight: 600;
     color: var(--text-color);
     text-transform: uppercase;
+
+
 
     transition: all .3s ease-in-out;
 }
 
 .nav__link:hover {
     background-color: var(--accent);
-    border-radius: 50%;
+    color: var(--white);
+    border-radius: 5px;
 }
 
 /* section */
